@@ -1,0 +1,21 @@
+.header {
+    color: #fff;
+    z-index: 12;
+    position: absolute;
+    width: 100%;
+    border-bottom: none;
+    background: rgba(35,35,35,.6);
+    padding: 20px 50px;
+}
+li.nav-item a {
+    color: #727272;
+    font-family: dm sans,Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+ul.list-unstyled li i {
+    font-size: 25px;
+    color: #212529;
+}
