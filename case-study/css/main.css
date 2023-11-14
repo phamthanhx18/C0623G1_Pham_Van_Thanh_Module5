@@ -19,3 +19,8 @@ ul.list-unstyled li i {
     font-size: 25px;
     color: #212529;
 }
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
