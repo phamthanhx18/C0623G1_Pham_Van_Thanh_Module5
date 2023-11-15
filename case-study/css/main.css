@@ -24,3 +24,11 @@ ul.list-unstyled li i {
     justify-content: center;
     align-items: center;
 }
+.btn.btn-primary {
+    border-radius: 15px;
+    background: #0A043C;
+    border: 0;
+}
+#introduction p {
+    font-size: 18px;
+}
