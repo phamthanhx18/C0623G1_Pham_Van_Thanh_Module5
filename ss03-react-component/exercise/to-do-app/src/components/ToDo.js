@@ -4,19 +4,35 @@ class ToDo extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            listTask: ["1111","2222"],
-            item: ""
+            listTask: [
+                {
+                    id: 1,
+                    task: "1111"
+                },
+                {
+                    id: 2,
+                    task: "2222"
+                }
+            ],
+            item: {},
+            keyCounter: 3
         };
     }
 
     handleChange = (event) => {
-        this.setState({item: event.target.value});
+        this.setState({
+            item: {
+                id: this.state.keyCounter,
+                task: event.target.value
+            },
+        });
     }
     handleAddItem = () => {
         this.setState(
             {
                 ...this.state,
-                listTask: [...this.state.listTask, this.state.item]
+                listTask: [...this.state.listTask, this.state.item],
+                keyCounter: this.state.keyCounter + 1
             })
     }
 
@@ -36,15 +52,18 @@ class ToDo extends Component {
                 <table className="table">
                     <thead>
                     <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col">Công việc</th>
                         <th scope="col">Công việc</th>
                     </tr>
                     </thead>
                     <tbody>
-                        {this.state.listTask.map((value,index) => (
-                            <tr key={index}>
-                                <td>{value}</td>
-                            </tr>
-                        ))}
+                    {this.state.listTask.map((value, index) => (
+                        <tr key={value.id}>
+                            <td>{index + 1}</td>
+                            <td>{value.task}</td>
+                        </tr>
+                    ))}
                     </tbody>
                 </table>
             </div>
