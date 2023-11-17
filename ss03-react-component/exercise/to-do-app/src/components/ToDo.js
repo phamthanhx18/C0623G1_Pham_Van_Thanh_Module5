@@ -54,7 +54,6 @@ class ToDo extends Component {
                     <tr>
                         <th scope="col">STT</th>
                         <th scope="col">Công việc</th>
-                        <th scope="col">Công việc</th>
                     </tr>
                     </thead>
                     <tbody>
