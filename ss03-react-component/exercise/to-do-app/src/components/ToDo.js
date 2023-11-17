@@ -36,15 +36,13 @@ class ToDo extends Component {
                 <table className="table">
                     <thead>
                     <tr>
-                        <th scope="col">STT</th>
                         <th scope="col">Công việc</th>
                     </tr>
                     </thead>
                     <tbody>
-                        {this.state.listTask.map(value => (
-                            <tr>
+                        {this.state.listTask.map((value,index) => (
+                            <tr key={index}>
                                 <td>{value}</td>
-                                <td></td>
                             </tr>
                         ))}
                     </tbody>

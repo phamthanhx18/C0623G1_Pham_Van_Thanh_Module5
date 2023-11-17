@@ -39,9 +39,9 @@ class StudentInfoComponent extends Component{
             </tr>
             </thead>
             <tbody>
-            {this.state.listStudent.map(student => (
-                <tr>
-                    <td>{student.id}</td>
+            {this.state.listStudent.map((student,index) => (
+                <tr key={student.id}>
+                    <td>{index + 1}</td>
                     <td>{student.name}</td>
                     <td>{student.age}</td>
                     <td>{student.address}</td>
