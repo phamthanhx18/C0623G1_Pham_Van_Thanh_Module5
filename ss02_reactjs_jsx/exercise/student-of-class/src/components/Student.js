@@ -45,8 +45,8 @@ class Student extends Component {
         return <>
             <table>
                 {
-                    this.state.studentList.map(student => (
-                        <tr>
+                    this.state.studentList.map((student,index) => (
+                        <tr key={index}>
                             <td>{student.company}</td>
                             <td>{student.contact}</td>
                             <td>{student.country}</td>
