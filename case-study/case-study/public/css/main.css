@@ -1,0 +1,60 @@
+.header {
+    color: #fff;
+    z-index: 12;
+    position: absolute;
+    width: 100%;
+    border-bottom: none;
+    background: rgba(35,35,35,.6);
+    padding: 20px 50px;
+}
+li.nav-item a {
+    color: #727272;
+    font-family: dm sans,Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+ul.list-unstyled li i {
+    font-size: 25px;
+    color: #212529;
+}
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn.btn-primary {
+    border-radius: 15px;
+    background: #0A043C;
+    border: 0;
+}
+#introduction p {
+    font-size: 18px;
+}
+
+#rental-villa .card-title {
+    font-size: 15px;
+}
+
+.dashboard-header {
+    font-weight: 400;
+    -webkit-transition: background 0.25s ease;
+    box-shadow: 0px 5px 21px -5px #CDD1E1;
+}
+
+span.menu-title {
+    color: inherit;
+    display: inline-block;
+    font-size: 0.875rem;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.header-secondary {
+    color: #fff;
+    width: 100%;
+    border-bottom: none;
+    background: rgba(35,35,35,.6);
+    padding: 20px 50px;
+}
