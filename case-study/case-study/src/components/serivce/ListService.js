@@ -7,6 +7,16 @@ function ListService() {
             title: "PHÒNG SUITE HƯỚNG BIỂN",
             area: "50m2"
         },
+        {
+            id: 2,
+            title: "PHÒNG VILLA HƯỚNG BIỂN",
+            area: "100m2"
+        },
+        {
+            id: 3,
+            title: "NHÀ CHO THUÊ HƯỚNG BIỂN",
+            area: "200m2"
+        }
     ];
 
     return (
