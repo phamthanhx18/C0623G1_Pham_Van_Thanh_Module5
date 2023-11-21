@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -11,6 +10,7 @@ import AddCustomer from "./components/customer/AddCustomer";
 import EditCustomer from "./components/customer/EditCustomer";
 import ListContract from "./components/contract/ListContract";
 import AddContract from "./components/contract/AddContract";
+import Facility from "./components/facility/Facility";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <EditCustomer />
         <ListContract />
         <AddContract />
+        <Facility />
       <Footer/>
     </>
   );
