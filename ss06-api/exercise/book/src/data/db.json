@@ -2,18 +2,13 @@
   "books": [
     {
       "id": 1,
-      "title": "json-server",
-      "quantity": 10
+      "title": "json-server1111",
+      "quantity": 1
     },
     {
       "id": 2,
       "title": "json-server",
       "quantity": 10
-    },
-    {
-      "title": "1",
-      "quantity": 0,
-      "id": 3
     }
   ]
 }

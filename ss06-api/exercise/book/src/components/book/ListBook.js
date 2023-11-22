@@ -1,9 +1,26 @@
 import React, {useEffect, useState} from 'react';
 import * as bookService from "../../services/BookService";
 import {Link} from "react-router-dom";
+import {toast} from "react-toastify";
+import Modal from 'react-modal';
+import {deleteBook} from "../../services/BookService";
 
 function ListBook() {
     const [books, setBooks] = useState([])
+    const [bookDelete, setBookDelete] = useState({});
+    const alertSuccess = () => toast.success("Delete success!!!");
+
+    const customStyles = {
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+        },
+    };
+
     useEffect(() => {
         getAllBook();
     }, []);
@@ -12,9 +29,23 @@ function ListBook() {
         setBooks(data);
     }
 
-    const handleDeleteBook = async (item) => {
-        let isDelete = await bookService.deleteBook(item)
-        getAllBook();
+    const handleDeleteBook = async () => {
+        let isDelete = await bookService.deleteBook(bookDelete)
+        if (isDelete) {
+            setBookDelete({})
+            setModalIsOpen(false);
+            alertSuccess()
+            getAllBook();
+        }
+    }
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const openModal = (item) => {
+        setModalIsOpen(true);
+        setBookDelete(item);
+    }
+    const closeModal = () => {
+        setModalIsOpen(false);
     }
 
     return (
@@ -42,12 +73,21 @@ function ListBook() {
                             <Link className="btn btn-warning" to={`/edit/${item.id}`}>Chỉnh sửa</Link>
                         </td>
                         <td>
-                            <button  className="btn btn-danger" onClick={() => handleDeleteBook(item)}>Xóa</button>
+                            <button  className="btn btn-danger" onClick={() => openModal(item)}>Xóa</button>
                         </td>
                     </tr>
                 ))}
                 </tbody>
             </table>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                style={customStyles}
+                contentLabel="Delete">
+                <h2>Are you sure about delete</h2>
+                <button onClick={closeModal}>Close</button>
+                <button onClick={handleDeleteBook}>Delete</button>
+            </Modal>
         </div>
     );
 }
