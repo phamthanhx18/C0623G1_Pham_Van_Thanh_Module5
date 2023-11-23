@@ -1,16 +1,17 @@
 import React from 'react';
+import {Link, NavLink} from "react-router-dom";
 function Navigation() {
     return <>
         <div className="header d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" className="logo d-none d-sm-none d-lg-block">
+            <Link to="/" className="logo d-none d-sm-none d-lg-block">
                 <img src="/images/logo@2x.png" alt="Travel" height="50" />
-            </a>
+            </Link>
 
             <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" className="nav-link px-4 link-light">Trang chủ</a></li>
-                <li><a href="#" className="nav-link px-4 link-light">Thuê Villa</a></li>
-                <li><a href="#" className="nav-link px-4 link-light">Thuê House</a></li>
-                <li><a href="#" className="nav-link px-4 link-light">Thuê Phòng</a></li>
+                <li><NavLink to="/" className="nav-link px-4 link-light">Trang chủ</NavLink></li>
+                <li><NavLink to="/villa" className="nav-link px-4 link-light">Thuê Villa</NavLink></li>
+                <li><NavLink to="/house" className="nav-link px-4 link-light">Thuê House</NavLink></li>
+                <li><NavLink to="/room" className="nav-link px-4 link-light">Thuê Phòng</NavLink></li>
             </ul>
 
             <div className="dropdown text-end">
@@ -31,6 +32,7 @@ function Navigation() {
             </div>
             <div className="px-3 text-end">
                 <button className="btn btn-primary">Liên hệ</button>
+                <Link to="/dashboard" className="btn btn-primary">Dashboard</Link>
             </div>
         </div>
     </>

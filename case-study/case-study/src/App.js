@@ -2,29 +2,38 @@ import './App.css';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
-import ListService from "./components/serivce/ListService";
-import EditService from "./components/serivce/EditService";
-import AddService from "./components/serivce/AddService";
-import ListCustomer from "./components/customer/ListCustomer";
-import AddCustomer from "./components/customer/AddCustomer";
-import EditCustomer from "./components/customer/EditCustomer";
-import ListContract from "./components/contract/ListContract";
-import AddContract from "./components/contract/AddContract";
-import Facility from "./components/facility/Facility";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import ListVilla from "./components/serivce/villa/ListVilla";
+import ListHouse from "./components/serivce/house/ListHouse";
+import ListRoom from "./components/serivce/room/ListRoom";
+import DetailVilla from "./components/serivce/villa/DetailVilla";
+import DetailHouse from "./components/serivce/house/DetailHouse";
+import DetailRoom from "./components/serivce/room/DetailRoom";
+import Dashboard from "./components/dashboard/Dashboard";
+import TableCustomer from "./components/dashboard/customer/TableCustomer";
+import TableContract from "./components/dashboard/contract/TableContract";
+import TableService from "./components/dashboard/service/TableService";
 
 function App() {
-  return (
-    <>
-      <Header/>
-        <ListCustomer />
-        <AddCustomer />
-        <EditCustomer />
-        <ListContract />
-        <AddContract />
-        <Facility />
-      <Footer/>
-    </>
-  );
+    return (
+        <BrowserRouter>
+            <Header/>
+            <Routes>
+                <Route path="/" Component={HomePage}/>
+                <Route path="/villa" Component={ListVilla}/>
+                <Route path="/villa/:id" Component={DetailVilla}/>
+                <Route path="/house" Component={ListHouse}/>
+                <Route path="/house/:id" Component={DetailHouse}/>
+                <Route path="/room" Component={ListRoom}/>
+                <Route path="/room/:id" Component={DetailRoom}/>
+                <Route path="/dashboard" Component={Dashboard}/>
+                <Route path="/dashboard/customer" Component={TableCustomer}/>
+                <Route path="/dashboard/service" Component={TableService}/>
+                <Route path="/dashboard/contract" Component={TableContract}/>
+            </Routes>
+            <Footer/>
+        </BrowserRouter>
+    );
 }
 
 export default App;

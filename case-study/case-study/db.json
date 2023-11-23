@@ -1,0 +1,170 @@
+{
+  "villas": [
+    {
+      "id": 1,
+      "title": "Green Villa In The Ocean Estates For Rent In Da Nang",
+      "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/admin-ajax-22.jpeg",
+      "area": "200m2",
+      "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
+      "costs": 300,
+      "maxPeople": 5,
+      "standards": "Được trang trí với tông màu dịu nhẹ kết hợp với những đồ thủ công trang trí mang đậm hơi thở văn hóa Chăm-pa của địa phương, căn phòng được chia tầng rõ rệt. Ở dưới là khu vực sinh hoạt với ghế sofa chữ L và ở trên là giường ngủ tạo cảm giác trang nhã mà rất thân thuộc như ở nhà.",
+      "amenities": "Xe đạp, Karaoke, Bữa sáng",
+      "areaPool": 100,
+      "numberFloors": 3,
+      "albums": [
+        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Villa With 2 Seaside Bedrooms For Rent In Da Nang",
+      "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/88253639_3082088495142984_8193461183039143936_o-835x467-1.jpg",
+      "area": "100m2",
+      "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
+      "costs": 300,
+      "maxPeople": 5,
+      "standards": "Được trang trí với tông màu dịu nhẹ kết hợp với những đồ thủ công trang trí mang đậm hơi thở văn hóa Chăm-pa của địa phương, căn phòng được chia tầng rõ rệt. Ở dưới là khu vực sinh hoạt với ghế sofa chữ L và ở trên là giường ngủ tạo cảm giác trang nhã mà rất thân thuộc như ở nhà.",
+      "amenities": "Xe đạp, Karaoke, Bữa sáng",
+      "areaPool": 100,
+      "numberFloors": 3,
+      "albums": [
+        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Green Life Villa For Rent In Da Nang",
+      "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/House-Rental-Danang-Code-V1198_-2.jpg",
+      "area": "200m2",
+      "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
+      "costs": 300,
+      "maxPeople": 5,
+      "standards": "Được trang trí với tông màu dịu nhẹ kết hợp với những đồ thủ công trang trí mang đậm hơi thở văn hóa Chăm-pa của địa phương, căn phòng được chia tầng rõ rệt. Ở dưới là khu vực sinh hoạt với ghế sofa chữ L và ở trên là giường ngủ tạo cảm giác trang nhã mà rất thân thuộc như ở nhà.",
+      "amenities": "Xe đạp, Karaoke, Bữa sáng",
+      "areaPool": 100,
+      "numberFloors": 3,
+      "albums": [
+        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
+      ]
+    }
+  ],
+  "houses": [
+    {
+      "id": 1,
+      "title": "House In The Ocean Estates For Rent In Da Nang",
+      "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/admin-ajax-22.jpeg",
+      "area": "200m2",
+      "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
+      "costs": 300,
+      "maxPeople": 5,
+      "standards": "Được trang trí với tông màu dịu nhẹ kết hợp với những đồ thủ công trang trí mang đậm hơi thở văn hóa Chăm-pa của địa phương, căn phòng được chia tầng rõ rệt. Ở dưới là khu vực sinh hoạt với ghế sofa chữ L và ở trên là giường ngủ tạo cảm giác trang nhã mà rất thân thuộc như ở nhà.",
+      "amenities": "Xe đạp, Karaoke, Bữa sáng",
+      "numberFloors": 3,
+      "albums": [
+        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "House With 2 Seaside Bedrooms For Rent In Da Nang",
+      "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/88253639_3082088495142984_8193461183039143936_o-835x467-1.jpg",
+      "area": "100m2",
+      "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
+      "costs": 300,
+      "maxPeople": 5,
+      "standards": "Được trang trí với tông màu dịu nhẹ kết hợp với những đồ thủ công trang trí mang đậm hơi thở văn hóa Chăm-pa của địa phương, căn phòng được chia tầng rõ rệt. Ở dưới là khu vực sinh hoạt với ghế sofa chữ L và ở trên là giường ngủ tạo cảm giác trang nhã mà rất thân thuộc như ở nhà.",
+      "amenities": "Xe đạp, Karaoke, Bữa sáng",
+      "numberFloors": 3,
+      "albums": [
+        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "House Life Villa For Rent In Da Nang",
+      "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/House-Rental-Danang-Code-V1198_-2.jpg",
+      "area": "200m2",
+      "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
+      "costs": 300,
+      "maxPeople": 5,
+      "standards": "Được trang trí với tông màu dịu nhẹ kết hợp với những đồ thủ công trang trí mang đậm hơi thở văn hóa Chăm-pa của địa phương, căn phòng được chia tầng rõ rệt. Ở dưới là khu vực sinh hoạt với ghế sofa chữ L và ở trên là giường ngủ tạo cảm giác trang nhã mà rất thân thuộc như ở nhà.",
+      "amenities": "Xe đạp, Karaoke, Bữa sáng",
+      "numberFloors": 3,
+      "albums": [
+        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "title": "Room Supper In The Ocean Estates For Rent In Da Nang",
+      "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/admin-ajax-22.jpeg",
+      "area": "200m2",
+      "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
+      "costs": 300,
+      "maxPeople": 5,
+      "freeService": "Xe đạp, Karaoke, Bữa sáng",
+      "albums": [
+        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Room Supper Seaside Bedrooms For Rent In Da Nang",
+      "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/88253639_3082088495142984_8193461183039143936_o-835x467-1.jpg",
+      "area": "100m2",
+      "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
+      "costs": 300,
+      "maxPeople": 5,
+      "freeService": "Xe đạp, Karaoke, Bữa sáng",
+      "numberFloors": 3,
+      "albums": [
+        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Room Supper For Rent In Da Nang",
+      "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/House-Rental-Danang-Code-V1198_-2.jpg",
+      "area": "200m2",
+      "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
+      "costs": 300,
+      "maxPeople": 5,
+      "freeService": "Xe đạp, Karaoke, Bữa sáng",
+      "numberFloors": 3,
+      "albums": [
+        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
+        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
