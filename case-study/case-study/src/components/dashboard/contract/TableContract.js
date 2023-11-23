@@ -1,29 +1,18 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Sidebar from "../Sidebar";
+import {Link} from "react-router-dom";
+import * as contractCustomer from "../../../services/ContractService";
 
 function TableContract() {
-    const contracts = [
-        {
-            id: 1,
-            contractCode: "XMDASJDA",
-            startDate: "08/12/2020",
-            endDate: "12/12/2023",
-            deposit: 0,
-            totalPayment: 1200000,
-            employee: "Nguyễn Văn An",
-            customerName: "Nguyễn Thị Hào"
-        },
-        {
-            id: 2,
-            contractCode: "BADASJDA",
-            startDate: "08/12/2020",
-            endDate: "12/12/2023",
-            deposit: 0,
-            totalPayment: 1200000,
-            employee: "Nguyễn Văn An",
-            customerName: "Nguyễn Thị Hào"
-        },
-    ];
+    const [contracts, setContracts] = useState([]);
+
+    const getAllContracts = async () => {
+        let data = await contractCustomer.getAllContract();
+        setContracts(data.data);
+    }
+    useEffect(() => {
+        getAllContracts()
+    }, []);
 
     return (
         <>
@@ -35,6 +24,9 @@ function TableContract() {
                     </div>
                     <div className="col-lg-9">
                         <h2>Danh sách hợp đồng</h2>
+                        <div>
+                            <Link className="btn btn-primary" to="/dashboard/contract/add">Thêm mới hợp đồng</Link>
+                        </div>
                         <table className="table table-hover">
                             <thead>
                             <tr>
@@ -43,7 +35,6 @@ function TableContract() {
                                 <th scope="col">Ngày kết thúc</th>
                                 <th scope="col">Tiền đặt cọc</th>
                                 <th scope="col">Tổng thanh toán</th>
-                                <th scope="col">Nhân viên phụ trách</th>
                                 <th scope="col">Tên khách hàng</th>
                             </tr>
                             </thead>
@@ -55,7 +46,6 @@ function TableContract() {
                                     <td>{contract.endDate}</td>
                                     <td>{contract.deposit}</td>
                                     <td>{contract.totalPayment}</td>
-                                    <td>{contract.employee}</td>
                                     <td>{contract.customerName}</td>
                                 </tr>
                             ))}

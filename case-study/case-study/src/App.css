@@ -41,3 +41,7 @@ a {
   color: #212529;
   text-decoration: auto;
 }
+
+li.list-group-item .active {
+  font-weight: bold;
+}

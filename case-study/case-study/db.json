@@ -157,14 +157,46 @@
       ]
     }
   ],
-  "comments": [
+  "customer": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "Phạm Xuân Diệu",
+      "birthday": "1999-01-01",
+      "gender": 0,
+      "typeCustomer": 2,
+      "idCard": "12345678",
+      "phone": "0123456789",
+      "email": "",
+      "address": "Đà Nẵng"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "contracts": [
+    {
+      "id": 1,
+      "contractCode": "XMDASJDA",
+      "startDate": "08/12/2020",
+      "endDate": "12/12/2023",
+      "deposit": 0,
+      "totalPayment": 1200000,
+      "customerName": "Nguyễn Thị Hào"
+    },
+    {
+      "contractCode": "1",
+      "startDate": "2023-11-18",
+      "endDate": "2023-11-25",
+      "deposit": 111,
+      "totalPayment": 111,
+      "customerName": "1",
+      "id": 4
+    },
+    {
+      "contractCode": "11",
+      "startDate": "2023-12-01",
+      "endDate": "2023-11-12",
+      "deposit": 111,
+      "totalPayment": 111,
+      "customerName": "111",
+      "id": 5
+    }
+  ]
 }

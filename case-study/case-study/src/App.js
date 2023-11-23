@@ -13,6 +13,9 @@ import Dashboard from "./components/dashboard/Dashboard";
 import TableCustomer from "./components/dashboard/customer/TableCustomer";
 import TableContract from "./components/dashboard/contract/TableContract";
 import TableService from "./components/dashboard/service/TableService";
+import AddCustomer from "./components/dashboard/customer/AddCustomer";
+import EditCustomer from "./components/dashboard/customer/EditCustomer";
+import AddContract from "./components/dashboard/contract/AddContract";
 
 function App() {
     return (
@@ -28,8 +31,11 @@ function App() {
                 <Route path="/room/:id" Component={DetailRoom}/>
                 <Route path="/dashboard" Component={Dashboard}/>
                 <Route path="/dashboard/customer" Component={TableCustomer}/>
+                <Route path="/dashboard/customer/add" Component={AddCustomer}/>
+                <Route path="/dashboard/customer/edit/:id" Component={EditCustomer}/>
                 <Route path="/dashboard/service" Component={TableService}/>
                 <Route path="/dashboard/contract" Component={TableContract}/>
+                <Route path="/dashboard/contract/add" Component={AddContract}/>
             </Routes>
             <Footer/>
         </BrowserRouter>
