@@ -39,8 +39,8 @@ function AddCustomer() {
         address: Yup.string().required("address: Trường này bắt buộc nhập")
     })
     return (<>
-        <div style={{height: 100}}></div>
         <div className="container">
+            <div style={{height: 100}}></div>
             <div className="row my-5">
                 <div className="col-lg-12">
                     <h2>Thêm mới khách hàng</h2>

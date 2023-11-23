@@ -16,3 +16,30 @@ export const getRoomById = (idRoom) => {
         return undefined;
     }
 }
+
+export const addNewRoom = (room) => {
+    try {
+        axios.post("http://localhost:3301/rooms",room);
+        return true;
+    } catch (error) {
+        return false;
+    }
+}
+
+export const updateRoom = (room) => {
+    try {
+        axios.patch(`http://localhost:3301/rooms/${room.id}`,room);
+        return true;
+    } catch (error) {
+        return false;
+    }
+}
+
+export const deleteRoomById = (idRoom) => {
+    try {
+        let res = axios.delete(`http://localhost:3301/rooms/${idRoom}`);
+        return res;
+    } catch (error) {
+        return undefined;
+    }
+}

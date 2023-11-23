@@ -11,12 +11,7 @@
       "standards": "Được trang trí với tông màu dịu nhẹ kết hợp với những đồ thủ công trang trí mang đậm hơi thở văn hóa Chăm-pa của địa phương, căn phòng được chia tầng rõ rệt. Ở dưới là khu vực sinh hoạt với ghế sofa chữ L và ở trên là giường ngủ tạo cảm giác trang nhã mà rất thân thuộc như ở nhà.",
       "amenities": "Xe đạp, Karaoke, Bữa sáng",
       "areaPool": 100,
-      "numberFloors": 3,
-      "albums": [
-        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
-      ]
+      "numberFloors": 3
     },
     {
       "id": 2,
@@ -29,12 +24,7 @@
       "standards": "Được trang trí với tông màu dịu nhẹ kết hợp với những đồ thủ công trang trí mang đậm hơi thở văn hóa Chăm-pa của địa phương, căn phòng được chia tầng rõ rệt. Ở dưới là khu vực sinh hoạt với ghế sofa chữ L và ở trên là giường ngủ tạo cảm giác trang nhã mà rất thân thuộc như ở nhà.",
       "amenities": "Xe đạp, Karaoke, Bữa sáng",
       "areaPool": 100,
-      "numberFloors": 3,
-      "albums": [
-        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
-      ]
+      "numberFloors": 3
     },
     {
       "id": 3,
@@ -47,12 +37,20 @@
       "standards": "Được trang trí với tông màu dịu nhẹ kết hợp với những đồ thủ công trang trí mang đậm hơi thở văn hóa Chăm-pa của địa phương, căn phòng được chia tầng rõ rệt. Ở dưới là khu vực sinh hoạt với ghế sofa chữ L và ở trên là giường ngủ tạo cảm giác trang nhã mà rất thân thuộc như ở nhà.",
       "amenities": "Xe đạp, Karaoke, Bữa sáng",
       "areaPool": 100,
-      "numberFloors": 3,
-      "albums": [
-        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
-      ]
+      "numberFloors": 3
+    },
+    {
+      "title": "1",
+      "image": "1",
+      "area": 1,
+      "description": "1",
+      "costs": 1,
+      "maxPeople": 1,
+      "standards": "1",
+      "amenities": "1",
+      "areaPool": "1",
+      "numberFloors": "1",
+      "id": 4
     }
   ],
   "houses": [
@@ -66,12 +64,7 @@
       "maxPeople": 5,
       "standards": "Được trang trí với tông màu dịu nhẹ kết hợp với những đồ thủ công trang trí mang đậm hơi thở văn hóa Chăm-pa của địa phương, căn phòng được chia tầng rõ rệt. Ở dưới là khu vực sinh hoạt với ghế sofa chữ L và ở trên là giường ngủ tạo cảm giác trang nhã mà rất thân thuộc như ở nhà.",
       "amenities": "Xe đạp, Karaoke, Bữa sáng",
-      "numberFloors": 3,
-      "albums": [
-        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
-      ]
+      "numberFloors": 3
     },
     {
       "id": 2,
@@ -83,12 +76,7 @@
       "maxPeople": 5,
       "standards": "Được trang trí với tông màu dịu nhẹ kết hợp với những đồ thủ công trang trí mang đậm hơi thở văn hóa Chăm-pa của địa phương, căn phòng được chia tầng rõ rệt. Ở dưới là khu vực sinh hoạt với ghế sofa chữ L và ở trên là giường ngủ tạo cảm giác trang nhã mà rất thân thuộc như ở nhà.",
       "amenities": "Xe đạp, Karaoke, Bữa sáng",
-      "numberFloors": 3,
-      "albums": [
-        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
-      ]
+      "numberFloors": 3
     },
     {
       "id": 3,
@@ -100,12 +88,20 @@
       "maxPeople": 5,
       "standards": "Được trang trí với tông màu dịu nhẹ kết hợp với những đồ thủ công trang trí mang đậm hơi thở văn hóa Chăm-pa của địa phương, căn phòng được chia tầng rõ rệt. Ở dưới là khu vực sinh hoạt với ghế sofa chữ L và ở trên là giường ngủ tạo cảm giác trang nhã mà rất thân thuộc như ở nhà.",
       "amenities": "Xe đạp, Karaoke, Bữa sáng",
-      "numberFloors": 3,
-      "albums": [
-        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
-      ]
+      "numberFloors": 3
+    },
+    {
+      "title": "1",
+      "image": "111",
+      "area": 11,
+      "description": "1",
+      "costs": 1,
+      "maxPeople": 1,
+      "standards": "1",
+      "amenities": "1",
+      "areaPool": null,
+      "numberFloors": "1",
+      "id": 4
     }
   ],
   "rooms": [
@@ -117,12 +113,7 @@
       "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
       "costs": 300,
       "maxPeople": 5,
-      "freeService": "Xe đạp, Karaoke, Bữa sáng",
-      "albums": [
-        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
-      ]
+      "freeService": "Xe đạp, Karaoke, Bữa sáng"
     },
     {
       "id": 2,
@@ -133,12 +124,7 @@
       "costs": 300,
       "maxPeople": 5,
       "freeService": "Xe đạp, Karaoke, Bữa sáng",
-      "numberFloors": 3,
-      "albums": [
-        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
-      ]
+      "numberFloors": 3
     },
     {
       "id": 3,
@@ -149,12 +135,20 @@
       "costs": 300,
       "maxPeople": 5,
       "freeService": "Xe đạp, Karaoke, Bữa sáng",
-      "numberFloors": 3,
-      "albums": [
-        "https://file4.batdongsan.com.vn/resize/1275x717/2023/09/12/20230912094500-cf99_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-56f6_wm.jpg",
-        "https://file4.batdongsan.com.vn/2023/09/12/20230912094500-cf99_wm.jpg"
-      ]
+      "numberFloors": 3
+    },
+    {
+      "title": "111",
+      "image": "11",
+      "area": 11,
+      "description": "1",
+      "costs": 1,
+      "maxPeople": 1,
+      "standards": "",
+      "amenities": "",
+      "numberFloors": null,
+      "freeService": 1,
+      "id": 4
     }
   ],
   "customer": [

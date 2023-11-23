@@ -1,25 +1,35 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Sidebar from "../Sidebar";
+import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
+import 'react-tabs/style/react-tabs.css';
+import * as villaService from "../../../services/VillaService";
+import * as houseService from "../../../services/HouseService";
+import * as roomService from "../../../services/RoomService";
+import {Link} from "react-router-dom";
 
 function TableService() {
-    const services = [
-        {
-            id: 1,
-            name: "Thành PV",
-            gender: "Nam",
-            customerType: "Diamond",
-            phone: "0123456789",
-            email: "phamthanhx18@gmail.com"
-        },
-        {
-            id: 2,
-            name: "Thành PV2",
-            gender: "Nam",
-            customerType: "Diamond",
-            phone: "0123456789",
-            email: "phamthanhx18@gmail.com"
-        },
-    ];
+    const [villas, setVillas] = useState([]);
+    const [houses, setHouses] = useState([]);
+    const [rooms, setRooms] = useState([]);
+
+    const showAllRoom = async () => {
+        let data = await roomService.getAllRoom();
+        setRooms(data.data);
+    }
+
+    const showAllHouse = async () => {
+        let data = await houseService.getAllHouse();
+        setHouses(data.data);
+    }
+    const showAllVilla = async () => {
+        let data = await villaService.getAllVilla();
+        setVillas(data.data);
+    }
+    useEffect(() => {
+        showAllVilla();
+        showAllRoom();
+        showAllHouse();
+    }, []);
 
     return (
         <>
@@ -34,49 +44,116 @@ function TableService() {
                             <section id="dashboard-customer">
                                 <div className="row">
                                     <h4 className="mb-3">Danh sách dịch vụ tại Furama Resort</h4>
-                                    <table className="table table-hover">
-                                        <thead>
-                                        <tr>
-                                            <th scope="col">STT</th>
-                                            <th scope="col">Tên khách hàng</th>
-                                            <th scope="col">Giới tính</th>
-                                            <th scope="col">Loại khách hàng</th>
-                                            <th scope="col">Số điện thoại</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Thao tác</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        {services.map((customer, index) => (
-                                            <tr key={customer.id}>
-                                                <th scope="row">{index + 1}</th>
-                                                <td>{customer.name}</td>
-                                                <td>{customer.gender}</td>
-                                                <td>{customer.customerType}</td>
-                                                <td>{customer.phone}</td>
-                                                <td>{customer.email}</td>
-                                                <td>
-                                                    <a href="#" className="btn btn-warning" role="button">Sửa</a>
-                                                    <a href="#" className="btn btn-danger" role="button"
-                                                       data-bs-toggle="modal" data-bs-target="#deleteModal">Xóa</a>
-                                                </td>
-                                            </tr>
-                                        ))}
-                                        </tbody>
-                                    </table>
-                                    <nav aria-label="Page navigation example">
-                                        <ul className="pagination justify-content-center">
-                                            <li className="page-item disabled">
-                                                <a className="page-link">Previous</a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">Next</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
+                                    <Tabs>
+                                        <TabList>
+                                            <Tab>Villa</Tab>
+                                            <Tab>House</Tab>
+                                            <Tab>Room</Tab>
+                                        </TabList>
+
+                                        <TabPanel>
+                                            <div><Link className="btn btn-primary" to="/dashboard/villa/add">Thêm mới Villa</Link></div>
+                                            <table className="table table-hover">
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">STT</th>
+                                                    <th scope="col">Tên dịch vụ</th>
+                                                    <th scope="col">Diện tích</th>
+                                                    <th scope="col">Giá thuê</th>
+                                                    <th scope="col">Số người ở</th>
+                                                    <th scope="col">Thao tác</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                {villas.map((item, index) => (
+                                                    <tr key={item.id}>
+                                                        <th scope="row">{index + 1}</th>
+                                                        <td>{item.title}</td>
+                                                        <td>{item.area}</td>
+                                                        <td>{item.costs}</td>
+                                                        <td>{item.maxPeople}</td>
+                                                        <td>
+                                                            <Link to={`/dashboard/villa/edit/${item.id}`}
+                                                                  className="btn btn-warning" role="button">Sửa</Link>
+                                                            <button
+                                                                className="btn btn-danger" role="button"
+                                                                data-bs-toggle="modal" data-bs-target="#deleteModal">Xóa
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                ))}
+                                                </tbody>
+                                            </table>
+                                        </TabPanel>
+                                        <TabPanel>
+                                            <div><Link className="btn btn-primary" to="/dashboard/house/add">Thêm mới House</Link></div>
+                                            <table className="table table-hover">
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">STT</th>
+                                                    <th scope="col">Tên dịch vụ</th>
+                                                    <th scope="col">Diện tích</th>
+                                                    <th scope="col">Giá thuê</th>
+                                                    <th scope="col">Số người ở</th>
+                                                    <th scope="col">Thao tác</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                {houses.map((item, index) => (
+                                                    <tr key={item.id}>
+                                                        <th scope="row">{index + 1}</th>
+                                                        <td>{item.title}</td>
+                                                        <td>{item.area}</td>
+                                                        <td>{item.costs}</td>
+                                                        <td>{item.maxPeople}</td>
+                                                        <td>
+                                                            <Link to={`/dashboard/house/edit/${item.id}`}
+                                                                  className="btn btn-warning" role="button">Sửa</Link>
+                                                            <button
+                                                                className="btn btn-danger" role="button"
+                                                                data-bs-toggle="modal" data-bs-target="#deleteModal">Xóa
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                ))}
+                                                </tbody>
+                                            </table>
+                                        </TabPanel>
+                                        <TabPanel>
+                                            <div><Link className="btn btn-primary" to="/dashboard/room/add">Thêm mới Room</Link></div>
+                                            <table className="table table-hover">
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">STT</th>
+                                                    <th scope="col">Tên dịch vụ</th>
+                                                    <th scope="col">Diện tích</th>
+                                                    <th scope="col">Giá thuê</th>
+                                                    <th scope="col">Số người ở</th>
+                                                    <th scope="col">Thao tác</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                {rooms.map((item, index) => (
+                                                    <tr key={item.id}>
+                                                        <th scope="row">{index + 1}</th>
+                                                        <td>{item.title}</td>
+                                                        <td>{item.area}</td>
+                                                        <td>{item.costs}</td>
+                                                        <td>{item.maxPeople}</td>
+                                                        <td>
+                                                            <Link to={`/dashboard/room/edit/${item.id}`}
+                                                                  className="btn btn-warning" role="button">Sửa</Link>
+                                                            <button
+                                                                className="btn btn-danger" role="button"
+                                                                data-bs-toggle="modal" data-bs-target="#deleteModal">Xóa
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                ))}
+                                                </tbody>
+                                            </table>
+                                        </TabPanel>
+                                    </Tabs>
                                 </div>
                             </section>
                             <div className="modal fade" id="deleteModal" tabIndex="-1"
