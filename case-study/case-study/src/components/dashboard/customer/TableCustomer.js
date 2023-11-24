@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import Sidebar from "../Sidebar";
 import * as customerService from "../../../services/CustomerService";
 import {Link} from "react-router-dom";
+import {toast} from "react-toastify";
 
 function TableCustomer() {
     const [customers, setCustomers] = useState([]);
@@ -19,9 +20,9 @@ function TableCustomer() {
         let isDelete = await customerService.deleteCustomerById(customerDelete.id);
         getAllCustomer();
         if (isDelete) {
-            console.log("Xóa thành công")
+            toast.success("Xóa khách hàng thành công !")
         } else {
-            console.log("Xóa thất bại !")
+            toast.error("Xóa khách hàng thất bại !")
         }
     };
     return (

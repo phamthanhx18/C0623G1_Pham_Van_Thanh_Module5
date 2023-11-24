@@ -3,6 +3,8 @@ import {useNavigate, useParams} from "react-router-dom";
 import * as customerService from "../../../services/CustomerService";
 import {ErrorMessage, Field, Form, Formik} from "formik";
 import * as Yup from "yup";
+import {toast} from "react-toastify";
+
 
 function EditCustomer() {
     const [customer, setCustomer] = useState(null);
@@ -12,7 +14,6 @@ function EditCustomer() {
     const getDataEdit = async () => {
         const data = await customerService.getCustomerById(id);
         setCustomer(data.data);
-        console.log(data.data)
     }
     const validation = Yup.object({
         name: Yup.string().required("Tên: Trường này bắt buộc nhập"),
@@ -29,9 +30,12 @@ function EditCustomer() {
     const handleSubmit = async (value) => {
         let isUpdate = customerService.updateCustomer(value);
         if (isUpdate) {
-            navigation("/dashboard/customer");
-            alert("Update thành công !")
+            toast.success("Update thành công !")
+            navigation("/dashboard/customer")
+        } else {
+            toast.error("Update thất bại !")
         }
+
     }
     useEffect(() => {
         getDataEdit()

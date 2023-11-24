@@ -3,6 +3,7 @@ import {useNavigate} from "react-router-dom";
 import * as roomService from "../../../services/RoomService";
 import * as Yup from "yup";
 import {ErrorMessage, Field, Form, Formik} from "formik";
+import {toast} from "react-toastify";
 
 function CreateRoom() {
     const navigate = useNavigate();
@@ -19,19 +20,23 @@ function CreateRoom() {
     const handleAddRoom = async (values) => {
         let isSuccess = await roomService.addNewRoom(values);
         if (isSuccess) {
-            navigate("/dashboard/service")
+            toast.success("Thêm mới Room thành công !")
         } else {
-
+            toast.error("Thêm mới Room thất bại !")
         }
     }
 
     const validation = Yup.object({
         title: Yup.string().required("Vui lòng nhập tiêu đề"),
         image: Yup.string().required("Vui lòng nhập đường dẫn ảnh"),
-        area: Yup.string().required("Vui lòng nhập diện tích"),
-        description: Yup.string().required("Vui lòng nhập mô tả"),
+        area: Yup.number().required("Vui lòng nhập diện tích")
+            .min(1,"Diện tích không nhỏ hơn 1m2"),
+        description: Yup.string().required("Vui lòng nhập mô tả")
+            .max(2000,"Mô tả phải bé hơn 2000 kí tự"),
         costs: Yup.number().required("Vui lòng nhập giá thuê").min(0, "Giá thuê phải lớn hơn hoặc bằng 0"),
-        maxPeople: Yup.string().required("Vui lòng nhập số lượng người tối đa"),
+        maxPeople: Yup.string().required("Vui lòng nhập số lượng người tối đa")
+            .min(1, "Số lượng tối đa phải lớn hơn hoặc bằng 1")
+            .max(20,"Số lượng tối đa phải bé hơn hoặc bằng 20"),
         freeService: Yup.string().required("Vui lòng nhập tiện ích miễn phí !"),
     })
     return (<>

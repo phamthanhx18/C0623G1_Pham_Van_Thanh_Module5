@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Green Villa In The Ocean Estates For Rent In Da Nang",
       "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/admin-ajax-22.jpeg",
-      "area": "200m2",
+      "area": 200,
       "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
       "costs": 300,
       "maxPeople": 5,
@@ -17,7 +17,7 @@
       "id": 2,
       "title": "Villa With 2 Seaside Bedrooms For Rent In Da Nang",
       "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/88253639_3082088495142984_8193461183039143936_o-835x467-1.jpg",
-      "area": "100m2",
+      "area": 100,
       "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
       "costs": 300,
       "maxPeople": 5,
@@ -30,7 +30,7 @@
       "id": 3,
       "title": "Green Life Villa For Rent In Da Nang",
       "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/House-Rental-Danang-Code-V1198_-2.jpg",
-      "area": "200m2",
+      "area": 200,
       "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
       "costs": 300,
       "maxPeople": 5,
@@ -38,19 +38,6 @@
       "amenities": "Xe đạp, Karaoke, Bữa sáng",
       "areaPool": 100,
       "numberFloors": 3
-    },
-    {
-      "title": "1",
-      "image": "1",
-      "area": 1,
-      "description": "1",
-      "costs": 1,
-      "maxPeople": 1,
-      "standards": "1",
-      "amenities": "1",
-      "areaPool": "1",
-      "numberFloors": "1",
-      "id": 4
     }
   ],
   "houses": [
@@ -58,7 +45,7 @@
       "id": 1,
       "title": "House In The Ocean Estates For Rent In Da Nang",
       "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/admin-ajax-22.jpeg",
-      "area": "200m2",
+      "area": -4,
       "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
       "costs": 300,
       "maxPeople": 5,
@@ -70,7 +57,7 @@
       "id": 2,
       "title": "House With 2 Seaside Bedrooms For Rent In Da Nang",
       "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/88253639_3082088495142984_8193461183039143936_o-835x467-1.jpg",
-      "area": "100m2",
+      "area": 3300,
       "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
       "costs": 300,
       "maxPeople": 5,
@@ -82,26 +69,13 @@
       "id": 3,
       "title": "House Life Villa For Rent In Da Nang",
       "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/House-Rental-Danang-Code-V1198_-2.jpg",
-      "area": "200m2",
+      "area": 200,
       "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
       "costs": 300,
       "maxPeople": 5,
       "standards": "Được trang trí với tông màu dịu nhẹ kết hợp với những đồ thủ công trang trí mang đậm hơi thở văn hóa Chăm-pa của địa phương, căn phòng được chia tầng rõ rệt. Ở dưới là khu vực sinh hoạt với ghế sofa chữ L và ở trên là giường ngủ tạo cảm giác trang nhã mà rất thân thuộc như ở nhà.",
       "amenities": "Xe đạp, Karaoke, Bữa sáng",
       "numberFloors": 3
-    },
-    {
-      "title": "1",
-      "image": "111",
-      "area": 11,
-      "description": "1",
-      "costs": 1,
-      "maxPeople": 1,
-      "standards": "1",
-      "amenities": "1",
-      "areaPool": null,
-      "numberFloors": "1",
-      "id": 4
     }
   ],
   "rooms": [
@@ -109,7 +83,7 @@
       "id": 1,
       "title": "Room Supper In The Ocean Estates For Rent In Da Nang",
       "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/admin-ajax-22.jpeg",
-      "area": "200m2",
+      "area": -2,
       "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
       "costs": 300,
       "maxPeople": 5,
@@ -119,7 +93,7 @@
       "id": 2,
       "title": "Room Supper Seaside Bedrooms For Rent In Da Nang",
       "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/88253639_3082088495142984_8193461183039143936_o-835x467-1.jpg",
-      "area": "100m2",
+      "area": "100",
       "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
       "costs": 300,
       "maxPeople": 5,
@@ -130,38 +104,25 @@
       "id": 3,
       "title": "Room Supper For Rent In Da Nang",
       "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/House-Rental-Danang-Code-V1198_-2.jpg",
-      "area": "200m2",
+      "area": 200,
       "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
       "costs": 300,
       "maxPeople": 5,
       "freeService": "Xe đạp, Karaoke, Bữa sáng",
       "numberFloors": 3
-    },
-    {
-      "title": "111",
-      "image": "11",
-      "area": 11,
-      "description": "1",
-      "costs": 1,
-      "maxPeople": 1,
-      "standards": "",
-      "amenities": "",
-      "numberFloors": null,
-      "freeService": 1,
-      "id": 4
     }
   ],
   "customer": [
     {
       "id": 2,
-      "name": "Phạm Xuân Diệu",
+      "name": "Phạm Văn Thành",
       "birthday": "1999-01-01",
       "gender": 0,
       "typeCustomer": 2,
-      "idCard": "12345678",
-      "phone": "0123456789",
-      "email": "",
-      "address": "Đà Nẵng"
+      "idCard": "123456789",
+      "phone": "0853895555",
+      "email": "phamthanhx18@gmail.com",
+      "address": "474 Núi Thành"
     }
   ],
   "contracts": [
@@ -191,6 +152,15 @@
       "totalPayment": 111,
       "customerName": "111",
       "id": 5
+    },
+    {
+      "contractCode": "11",
+      "startDate": "2023-11-25",
+      "endDate": "2023-11-26",
+      "deposit": 111,
+      "totalPayment": 11111,
+      "customerName": "111",
+      "id": 6
     }
   ]
 }

@@ -3,6 +3,7 @@ import * as customerService from "../../../services/CustomerService";
 import {ErrorMessage, Field, Form, Formik} from "formik";
 import * as Yup from "yup";
 import {useNavigate} from "react-router-dom";
+import {toast} from "react-toastify";
 
 function AddCustomer() {
     const navigate = useNavigate();
@@ -20,9 +21,9 @@ function AddCustomer() {
     const handleAddCustomer = async (values) => {
         let isSuccess = await customerService.addNewCustomer(values);
         if (isSuccess) {
-            navigate("/dashboard/customer")
+            toast.success("Thêm mới khách hàng thành công !")
         } else {
-
+            toast.error("Thêm mới khách hàng thất bại !")
         }
     }
 

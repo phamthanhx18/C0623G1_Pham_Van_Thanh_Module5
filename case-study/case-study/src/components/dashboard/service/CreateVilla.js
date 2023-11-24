@@ -3,6 +3,7 @@ import {useNavigate} from "react-router-dom";
 import * as villaService from "../../../services/VillaService";
 import * as Yup from "yup";
 import {ErrorMessage, Field, Form, Formik} from "formik";
+import {toast} from "react-toastify";
 
 function CreateVilla() {
     const navigate = useNavigate();
@@ -22,19 +23,23 @@ function CreateVilla() {
     const handleAddVilla = async (values) => {
         let isSuccess = await villaService.addNewVilla(values);
         if (isSuccess) {
-            navigate("/dashboard/service")
+            toast.success("Thêm mới Villa thành công !")
         } else {
-
+            toast.error("Thêm mới Villa thất bại !")
         }
     }
 
     const validation = Yup.object({
         title: Yup.string().required("Vui lòng nhập tiêu đề"),
         image: Yup.string().required("Vui lòng nhập đường dẫn ảnh"),
-        area: Yup.string().required("Vui lòng nhập diện tích"),
-        description: Yup.string().required("Vui lòng nhập mô tả"),
+        area: Yup.number().required("Vui lòng nhập diện tích")
+            .min(1,"Diện tích không nhỏ hơn 1m2"),
+        description: Yup.string().required("Vui lòng nhập mô tả")
+            .max(2000,"Mô tả phải bé hơn 2000 kí tự"),
         costs: Yup.number().required("Vui lòng nhập giá thuê").min(0, "Giá thuê phải lớn hơn hoặc bằng 0"),
-        maxPeople: Yup.string().required("Vui lòng nhập số lượng người tối đa"),
+        maxPeople: Yup.string().required("Vui lòng nhập số lượng người tối đa")
+            .min(1, "Số lượng tối đa phải lớn hơn hoặc bằng 1")
+            .max(20,"Số lượng tối đa phải bé hơn hoặc bằng 20"),
         standards: Yup.string().required("Vui lòng nhập tiêu chuẩn"),
         amenities: Yup.string().required("Vui lòng nhập tiện nghi"),
         areaPool: Yup.number().required("Vui lòng nhập diện tích hồ bơi").min(0, "Diện tích hồ bơi phải lớn hơn hoặc bằng 0"),

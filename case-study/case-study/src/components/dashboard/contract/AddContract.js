@@ -3,6 +3,7 @@ import * as contractService from "../../../services/ContractService";
 import {ErrorMessage, Field, Form, Formik} from "formik";
 import * as Yup from "yup";
 import {useNavigate} from "react-router-dom";
+import {toast} from "react-toastify";
 
 function AddContract() {
     const navigate = useNavigate();
@@ -16,10 +17,12 @@ function AddContract() {
     }
 
     const handleAddContract = async (values) => {
-        console.log(values)
         let isSuccess = contractService.addNewContract(values);
         if (isSuccess) {
+            toast.success("Thêm mới hợp đồng thành công !")
             navigate("/dashboard/contract")
+        } else {
+            toast.error("Thêm mới hợp đồng thất bại !")
         }
     }
 
