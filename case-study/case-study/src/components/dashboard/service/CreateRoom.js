@@ -20,6 +20,7 @@ function CreateRoom() {
     const handleAddRoom = async (values) => {
         let isSuccess = await roomService.addNewRoom(values);
         if (isSuccess) {
+            navigate("/dashboard/service", {state: "room"})
             toast.success("Thêm mới Room thành công !")
         } else {
             toast.error("Thêm mới Room thất bại !")

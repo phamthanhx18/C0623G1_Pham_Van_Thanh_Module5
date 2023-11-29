@@ -45,7 +45,7 @@
       "id": 1,
       "title": "House In The Ocean Estates For Rent In Da Nang",
       "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/admin-ajax-22.jpeg",
-      "area": -4,
+      "area": 55,
       "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
       "costs": 300,
       "maxPeople": 5,
@@ -83,7 +83,7 @@
       "id": 1,
       "title": "Room Supper In The Ocean Estates For Rent In Da Nang",
       "image": "https://houserentaldanang.com/wp-content/uploads/2020/11/admin-ajax-22.jpeg",
-      "area": -2,
+      "area": 2,
       "description": "Furama Villas Danang là một khu nghỉ dưỡng đẳng cấp 5 sao tại Đà Nẵng. Thiết kế sang trọng, phong cách, nội thất hiện đại, tiện nghi. Furama được rất nhiều du khách trong và ngoài nước đánh giá cao bởi vẻ đẹp và chất lượng dịch vụ của nó.",
       "costs": 300,
       "maxPeople": 5,
@@ -123,6 +123,17 @@
       "phone": "0853895555",
       "email": "phamthanhx18@gmail.com",
       "address": "474 Núi Thành"
+    },
+    {
+      "name": "Phạm Văn B",
+      "birthday": "2023-11-26",
+      "gender": "1",
+      "typeCustomer": "1",
+      "idCard": "124456789512",
+      "phone": "0853895554",
+      "email": "phamthanhx18@gmail.com",
+      "address": "474 Núi Thành",
+      "id": 3
     }
   ],
   "contracts": [

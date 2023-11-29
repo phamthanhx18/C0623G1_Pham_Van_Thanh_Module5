@@ -22,6 +22,7 @@ function CreateHouse() {
     const handleAddHouse = async (values) => {
         let isSuccess = await houseService.addNewHouse(values);
         if (isSuccess) {
+            navigate("/dashboard/service", {state: "house"})
             toast.success("Thêm mới House thành công !")
         } else {
             toast.error("Thêm mới House thất bại !")

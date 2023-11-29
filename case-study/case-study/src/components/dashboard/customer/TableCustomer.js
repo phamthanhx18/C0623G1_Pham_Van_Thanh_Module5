@@ -7,7 +7,10 @@ import {toast} from "react-toastify";
 function TableCustomer() {
     const [customers, setCustomers] = useState([]);
     const [customerDelete, setCustomerDelete] = useState([]);
-
+    const [filter, setFilter] = useState({
+        name: "",
+        phone: ""
+    })
     const getAllCustomer = async () => {
         let data = await customerService.getAllCustomer();
         setCustomers(data.data);
@@ -25,6 +28,22 @@ function TableCustomer() {
             toast.error("Xóa khách hàng thất bại !")
         }
     };
+    const changeNameFilter = (value) => {
+        setFilter({
+            ...filter,
+            name: value.target.value
+        })
+    };
+    const changePhoneFilter = (value) => {
+        setFilter({
+            ...filter,
+            phone: value.target.value
+        })
+    };
+    const searchCustomerBtn = async () => {
+        let res = await customerService.searchCustomer(filter);
+        setCustomers(res.data)
+    };
     return (
         <>
             <div>
@@ -41,6 +60,19 @@ function TableCustomer() {
                                     <div>
                                         <Link className="btn btn-primary" to="/dashboard/customer/add">Thêm mới khách
                                             hàng</Link>
+                                    </div>
+                                    <div className="row my-3">
+                                        <div className="col">
+                                            <input onChange={(value) => changeNameFilter(value)} type="text" className="form-control"
+                                                   placeholder="Tên khách hàng" aria-label="Tên khách hàng"/>
+                                        </div>
+                                        <div className="col">
+                                            <input onChange={(value) => changePhoneFilter(value)} type="text" className="form-control"
+                                                   placeholder="Số điện thoại" aria-label="Số điện thoại"/>
+                                        </div>
+                                        <div className="col">
+                                            <a onClick={searchCustomerBtn} role="button" className="btn btn-primary">Tìm</a>
+                                        </div>
                                     </div>
                                     <table className="table table-hover">
                                         <thead>

@@ -1,0 +1,19 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "ThanhPV",
+      "age": "25"
+    },
+    {
+      "id": 2,
+      "name": "ThanhPV2",
+      "age": "25"
+    },
+    {
+      "id": 3,
+      "name": "ThanhPV3",
+      "age": "25"
+    }
+  ]
+}

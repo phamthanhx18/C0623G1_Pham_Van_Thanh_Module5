@@ -43,3 +43,12 @@ export const deleteCustomerById = (idCustomer) => {
         return undefined;
     }
 }
+
+export const searchCustomer = (objectSearch) => {
+    try {
+        let res = axios.get(`http://localhost:3301/customer?name_like=${objectSearch.name}&phone_like=${objectSearch.phone}`);
+        return res;
+    } catch (error) {
+        return undefined;
+    }
+}

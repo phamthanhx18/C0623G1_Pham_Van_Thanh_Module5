@@ -23,6 +23,7 @@ function CreateVilla() {
     const handleAddVilla = async (values) => {
         let isSuccess = await villaService.addNewVilla(values);
         if (isSuccess) {
+            navigate("/dashboard/service", {state: "villa"})
             toast.success("Thêm mới Villa thành công !")
         } else {
             toast.error("Thêm mới Villa thất bại !")

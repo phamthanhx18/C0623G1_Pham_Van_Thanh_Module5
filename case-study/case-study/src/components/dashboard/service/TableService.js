@@ -5,7 +5,7 @@ import 'react-tabs/style/react-tabs.css';
 import * as villaService from "../../../services/VillaService";
 import * as houseService from "../../../services/HouseService";
 import * as roomService from "../../../services/RoomService";
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import * as customerService from "../../../services/CustomerService";
 import {toast} from "react-toastify";
 
@@ -15,21 +15,45 @@ function TableService() {
     const [rooms, setRooms] = useState([]);
     const [typeService, setTypeService] = useState([]);
     const [serviceDelete, setServiceDelete] = useState({});
+    const [tabIndex, setTabIndex] = useState(0);
+    const location = useLocation();
+    const {state} = location;
+
+    useEffect(() => {
+        switch (state) {
+            case 'house':
+                setTabIndex(1);
+                break;
+            case 'room':
+                setTabIndex(2);
+                break;
+            default:
+                setTabIndex(0);
+        }
+    }, [state])
 
     const showAllRoom = async () => {
         let data = await roomService.getAllRoom();
         setRooms(data.data);
     }
+    useEffect(() => {
+        showAllRoom();
+    }, [setRooms, roomService]);
 
     const showAllHouse = async () => {
         let data = await houseService.getAllHouse();
         setHouses(data.data);
     }
+    useEffect(() => {
+        showAllHouse();
+    }, [setHouses]);
     const showAllVilla = async () => {
         let data = await villaService.getAllVilla();
         setVillas(data.data);
     }
-
+    useEffect(() => {
+        showAllVilla();
+    }, [setVillas]);
     const handleDeleteService = async () => {
         let isDelete;
         switch (typeService) {
@@ -52,12 +76,6 @@ function TableService() {
             toast.error("Xóa dịch vụ thất bại !")
         }
     }
-    useEffect(() => {
-        showAllVilla();
-        showAllRoom();
-        showAllHouse();
-    }, []);
-
     return (
         <>
             <div>
@@ -71,13 +89,12 @@ function TableService() {
                             <section id="dashboard-customer">
                                 <div className="row">
                                     <h4 className="mb-3">Danh sách dịch vụ tại Furama Resort</h4>
-                                    <Tabs>
+                                    <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                                         <TabList>
                                             <Tab>Villa</Tab>
                                             <Tab>House</Tab>
                                             <Tab>Room</Tab>
                                         </TabList>
-
                                         <TabPanel>
                                             <div><Link className="btn btn-primary" to="/dashboard/villa/add">Thêm mới
                                                 Villa</Link></div>
@@ -103,14 +120,14 @@ function TableService() {
                                                         <td>
                                                             <Link to={`/dashboard/villa/edit/${item.id}`}
                                                                   className="btn btn-warning" role="button">Sửa</Link>
-                                                            <button onClick={() => {
+                                                            <a onClick={() => {
                                                                 setServiceDelete(item);
                                                                 setTypeService("villa")
                                                             }}
                                                                     className="btn btn-danger" role="button"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#deleteModal">Xóa
-                                                            </button>
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                 ))}
@@ -142,14 +159,14 @@ function TableService() {
                                                         <td>
                                                             <Link to={`/dashboard/house/edit/${item.id}`}
                                                                   className="btn btn-warning" role="button">Sửa</Link>
-                                                            <button onClick={() => {
+                                                            <a onClick={() => {
                                                                 setServiceDelete(item);
                                                                 setTypeService("house")
                                                             }}
                                                                     className="btn btn-danger" role="button"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#deleteModal">Xóa
-                                                            </button>
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                 ))}
@@ -174,21 +191,21 @@ function TableService() {
                                                 {rooms.map((item, index) => (
                                                     <tr key={item.id}>
                                                         <th scope="row">{index + 1}</th>
-                                                        <td>{item.title}</td>
+                                                        <td><span className="title-room">{item.title}</span></td>
                                                         <td>{item.area}</td>
                                                         <td>{item.costs}</td>
                                                         <td>{item.maxPeople}</td>
                                                         <td>
                                                             <Link to={`/dashboard/room/edit/${item.id}`}
                                                                   className="btn btn-warning" role="button">Sửa</Link>
-                                                            <button onClick={() => {
+                                                            <a onClick={() => {
                                                                 setServiceDelete(item);
                                                                 setTypeService("room")
                                                             }}
                                                                     className="btn btn-danger" role="button"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#deleteModal">Xóa
-                                                            </button>
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                 ))}
@@ -215,7 +232,7 @@ function TableService() {
                                                     data-bs-dismiss="modal"> Đóng
                                             </button>
                                             <button onClick={() => handleDeleteService()} type="button"
-                                                    class="btn btn-danger" data-bs-dismiss="modal"
+                                                    className="btn btn-danger" data-bs-dismiss="modal"
                                                     aria-label="Close">Xóa
                                             </button>
                                         </div>

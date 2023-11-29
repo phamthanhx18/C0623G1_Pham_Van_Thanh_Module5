@@ -35,8 +35,8 @@ function EditVilla() {
     const handleSubmit = async (value) => {
         let isUpdate = villaService.updateVilla(value);
         if (isUpdate) {
+            navigation("/dashboard/service", {state: "villa"})
             toast.success("Update thành công !")
-            navigation("/dashboard/customer")
         } else {
             toast.error("Update thất bại !")
         }

@@ -21,6 +21,7 @@ function AddCustomer() {
     const handleAddCustomer = async (values) => {
         let isSuccess = await customerService.addNewCustomer(values);
         if (isSuccess) {
+            navigate("/dashboard/customer")
             toast.success("Thêm mới khách hàng thành công !")
         } else {
             toast.error("Thêm mới khách hàng thất bại !")

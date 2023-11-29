@@ -8,7 +8,7 @@ import {toast} from "react-toastify";
 function EditHouse() {
     const [house, setHouse] = useState(null);
     const {id} = useParams()
-    const navigation = useNavigate();
+    const navigate = useNavigate();
 
     const getDataEdit = async () => {
         const data = await houseService.getHouseById(id);
@@ -34,8 +34,8 @@ function EditHouse() {
     const handleSubmit = async (value) => {
         let isUpdate = houseService.updateHouse(value);
         if (isUpdate) {
+            navigate("/dashboard/service", {state: "house"})
             toast.success("Update thành công !")
-            navigation("/dashboard/customer")
         } else {
             toast.error("Update thất bại !")
         }

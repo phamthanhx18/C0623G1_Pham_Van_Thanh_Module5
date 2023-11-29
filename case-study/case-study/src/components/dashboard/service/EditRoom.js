@@ -32,8 +32,8 @@ function EditRoom() {
     const handleSubmit = async (value) => {
         let isUpdate = roomService.updateRoom(value);
         if (isUpdate) {
+            navigation("/dashboard/service", {state: "room"})
             toast.success("Update thành công !")
-            navigation("/dashboard/customer")
         } else {
             toast.error("Update thất bại !")
         }
